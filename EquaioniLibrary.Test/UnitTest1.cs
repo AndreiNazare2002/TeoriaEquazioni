@@ -10,9 +10,9 @@ namespace EquazioniLibrary.Test
         public void Determinato1()
         {
             double a = 1;
-            double b = 0;
+            
             bool resultato = true;
-            bool determinate = EquazioniLibrary.Equazioni.IsDetermined(a, b);
+            bool determinate = EquazioniLibrary.Equazioni.IsDetermined(a);
             Assert.AreEqual(resultato, determinate);
         }
         [TestMethod]
@@ -21,7 +21,7 @@ namespace EquazioniLibrary.Test
             double a = 0;
             double b = 0;
             bool resultato = false;
-            bool determinate = EquazioniLibrary.Equazioni.IsDetermined(a, b);
+            bool determinate = EquazioniLibrary.Equazioni.IsDetermined(a);
             Assert.AreEqual(resultato, determinate);
         }
         [TestMethod]
@@ -30,7 +30,7 @@ namespace EquazioniLibrary.Test
             double a = -1;
             double b = 0;
             bool resultato = true;
-            bool determinate = EquazioniLibrary.Equazioni.IsDetermined(a, b);
+            bool determinate = EquazioniLibrary.Equazioni.IsDetermined(a);
             Assert.AreEqual(resultato, determinate);
         }
 

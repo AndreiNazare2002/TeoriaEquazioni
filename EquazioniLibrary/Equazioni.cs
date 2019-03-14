@@ -8,7 +8,7 @@ namespace EquazioniLibrary
 {
     public class Equazioni
     {
-        public static bool IsDetermined(double a, double b)
+        public static bool IsDetermined(double a)
         {
             bool determinato = false; 
             if (a != 0)
@@ -29,7 +29,7 @@ namespace EquazioniLibrary
         }
         public static bool IsDegree2(double a)
         {
-            bool secondogrado = false;
+            bool secondogrado = false ;
             if (a != 0)
             {
                 secondogrado = true;
@@ -54,7 +54,7 @@ namespace EquazioniLibrary
         static public string EquationDegree(double a, double b)
         {
             string resultato = "";
-            if (IsDetermined(a, b) == true) resultato = "Indeterminato";
+            if (IsDetermined(a) == true) resultato = "Indeterminato";
             if (IsInconsisted(a, b) == true) resultato = "Impossibile";
 
 
