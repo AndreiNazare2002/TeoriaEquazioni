@@ -15,7 +15,7 @@ namespace EquazioniLibrary
             {
                 determinato = true;
             }
-            return determinato;
+            return determinato; 
         }
 
         public static bool IsInconsisted(double a, double b)
